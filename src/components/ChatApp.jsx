@@ -20,13 +20,9 @@ export default function ChatApp() {
 
   return (
     <>
-      <div className="py-12 md:px-8">
-        <div className="container mx-auto">
           <div className="flex justify-center">
-            <div className="mb-3 w-96">
-              <div className="lg:w-2/5 flex ml-2 lg:ml-0">
+            <div className="w-80">
                 <div className="pt-2 relative  text-gray-600">
-                  <div className="col-span-6 sm:col-span-3">
                     <label htmlFor="teacher">
                       <div className="mt-4 flex mb-2">
                         <svg
@@ -58,7 +54,6 @@ export default function ChatApp() {
                         return <option key={index}>{item.question}</option>;
                       })}
                     </select>
-                  </div>
 
                   {ans ? (
                     <div>
@@ -87,11 +82,8 @@ export default function ChatApp() {
                     <div>{err}</div>
                   )}
                 </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
     </>
   );
 }
